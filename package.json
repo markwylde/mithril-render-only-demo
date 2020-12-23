@@ -1,16 +1,16 @@
 {
-  "name": "mii",
+  "name": "mithril-render-only-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "browserify -o index.min.js index.js && uglifyjs index.min.js --compress --mangle -o index.min.js",
-    "start": "ws",
+    "start": "npm run build && ws",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mithril": "^2.0.4"
   },
